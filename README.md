@@ -18,7 +18,6 @@ The main files are:
 Create and activate a virtual environment (optional but recommended):
 
 ```bash
-cd /Users/derekxu/Documents/code/openai-rft-quickstart
 python3 -m venv .venv
 source .venv/bin/activate
 ```
@@ -29,19 +28,17 @@ Install dependencies:
 pip install eval-protocol rapidfuzz
 ```
 
-Set your OpenAI API key:
+Set your API keys:
 
 ```bash
 export OPENAI_API_KEY="sk-..."
+export FIREWORKS_API_KEY="fw_"
 ```
 
 ## Running the Examples
 
-From the project root (`/Users/derekxu/Documents/code/openai-rft-quickstart`) with your virtual environment activated:
 
 1. **Run the Eval Protocol test with pytest**
-
-This shows that `rapidfuzz_eval` works as a normal Eval Protocol `@evaluation_test`:
 
 ```bash
 pytest example_rapidfuzz.py -vs
@@ -49,15 +46,13 @@ pytest example_rapidfuzz.py -vs
 
 2. **Validate and run the Python grader against OpenAI’s `/graders/*` APIs**
 
-This converts `rapidfuzz_eval` into a `type: "python"` grader spec and then validates/runs it via HTTP:
-
 ```bash
 python test_openai_grader.py
 ```
 
 You should see output similar to:
 
-```json
+```bash
 validate response: {
   "grader": {
     "type": "python",
