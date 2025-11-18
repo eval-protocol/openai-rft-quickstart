@@ -1,4 +1,4 @@
-## OpenAI RFT Quickstart (Eval Protocol Adapter)
+## Eval Protocol OpenAI RFT Quickstart
 
 This repo is a **minimal example** of how to:
 
