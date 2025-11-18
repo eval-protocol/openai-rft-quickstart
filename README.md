@@ -109,7 +109,6 @@ run response: {
     - Pulls the last assistant message from `row.messages`.
     - Compares it to `row.ground_truth` using `rapidfuzz.fuzz.WRatio`.
     - Writes the score into `row.evaluation_result = EvaluateResult(score=...)`.
-  - Calls `build_python_grader_from_evaluation_test(rapidfuzz_eval)` to produce `RAPIDFUZZ_PYTHON_GRADER_SPEC` (a `{"type": "python", "source": "..."}` dict).
 
 - **`test_openai_grader.py`**:
   - Imports `rapidfuzz_eval` and builds the grader with `build_python_grader_from_evaluation_test(rapidfuzz_eval)`.
