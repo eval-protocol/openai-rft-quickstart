@@ -2,9 +2,9 @@
 
 This repo is a **minimal example** of how to:
 
-- **Write an Eval Protocol `@evaluation_test`** that operates on an `EvaluationRow`
-- **Convert it into an OpenAI RFT Python grader** using `build_python_grader_from_evaluation_test`
-- **Validate and run** that grader via the OpenAI `/fine_tuning/alpha/graders/*` HTTP APIs
+1. **Write an Eval Protocol `@evaluation_test`** that operates on an `EvaluationRow`
+2. **Convert it into an OpenAI RFT Python grader** using `build_python_grader_from_evaluation_test`
+3. **Validate and run** that grader via the OpenAI `/fine_tuning/alpha/graders/*` HTTP APIs
 
 The core idea is: you define your grading logic once as an Eval Protocol evaluation test, and then reuse that exact logic as a `{"type": "python", "source": ...}` grader in an OpenAI Reinforcement Fine-Tuning (RFT) job.
 
