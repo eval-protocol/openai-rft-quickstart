@@ -6,7 +6,7 @@ This repo is a **minimal example** of how to:
 2. **Convert it into an [OpenAI RFT Python grader](https://platform.openai.com/docs/guides/graders#python-graders)** using `build_python_grader_from_evaluation_test`
 3. **Validate and run** that grader via the OpenAI `/fine_tuning/alpha/graders/*` HTTP APIs
 
-The OpenAI RFT adapter lets you **reuse Eval Protocol evaluation tests as Python graders** for OpenAI Reinforcement Fine-Tuning (RFT). Because your grading logic lives in an Eval Protocol `@evaluation_test`, you can reuse the exact same code as an OpenAI Python grader—-making it easy to start with OpenAI RFT and later move to other Eval Protocol–supported training workflows (or vice versa) without rewriting your evals.
+The OpenAI RFT adapter lets you **reuse Eval Protocol evaluation tests as Python graders** for OpenAI Reinforcement Fine-Tuning (RFT). Because your grading logic lives in an Eval Protocol `@evaluation_test`, you can reuse the exact same code as an OpenAI Python grader—making it easy to start with OpenAI RFT and later move to other Eval Protocol–supported training workflows (or vice versa) without rewriting your evals.
 
 The main files are:
 
