@@ -10,8 +10,8 @@ The core idea is: you define your grading logic once as an Eval Protocol evaluat
 
 The main files are:
 
-- `example_rapidfuzz.py`: defines an `@evaluation_test` called `rapidfuzz_eval` that uses `rapidfuzz.WRatio` to score similarity between a model’s answer and a reference answer.
-- `test_openai_grader.py`: builds a Python grader from `rapidfuzz_eval`, validates it with `/graders/validate`, and runs it once with `/graders/run`.
+- [`example_rapidfuzz.py`](./example_rapidfuzz.py): defines an `@evaluation_test` called `rapidfuzz_eval` that uses `rapidfuzz.WRatio` to score similarity between a model’s answer and a reference answer.
+- [`test_openai_grader.py`](./test_openai_grader.py): builds a Python grader from `rapidfuzz_eval`, validates it with `/graders/validate`, and runs it once with `/graders/run`.
 
 ## Installation
 
